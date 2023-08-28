@@ -16,7 +16,7 @@ pipeline
         {
             steps 
             {
-                echo 'Test App'
+                echo 'Testinggg'
             }
         }
 
@@ -27,15 +27,5 @@ pipeline
                 echo 'Deploy App'
             }
         }
-    }
-
-    post
-    {
-
-    	always
-    	{
-    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'selenium3bymukesh@gmail.com'
-    	}
-
     }
 }
