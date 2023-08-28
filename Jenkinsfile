@@ -16,7 +16,7 @@ pipeline
         {
             steps 
             {
-                echo 'Test App'
+                echo 'Testing the jenkins build'
             }
         }
 
@@ -34,7 +34,7 @@ pipeline
 
     	always
     	{
-    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'selenium3bymukesh@gmail.com'
+    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'suduvvuri@gmail.com'
     	}
 
     }
